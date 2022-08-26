@@ -55,4 +55,56 @@
         app:layout_constraintStart_toStartOf="@id/tvTitle"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPhoto" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+    <ImageView
+        android:id="@+id/imgCover"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintTop_toBottomOf="@id/text_notifications" />
+
+    <ImageButton
+        android:id="@+id/imgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/imgCover"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:src="@android:drawable/ic_menu_upload"
+        app:layout_constraintBottom_toBottomOf="@id/imgCover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBtn" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
